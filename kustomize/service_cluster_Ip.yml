@@ -4,7 +4,7 @@ metadata:
   name: my-clusterip-service
 spec:
   selector:
-    app: my-app
+    app: bankist-app-deployment
   ports:
     - protocol: TCP
       port: 80
