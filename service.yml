@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: bankist-app-service
+spec:
+  selector:
+    app:  bankist-app-deployment   # Must match the pod label
+  ports:
+    - protocol: TCP
+      port: 80            # Service port (exposed on the service) This is the service port
+      targetPort: 80      # Pod port (where the traffic is forwarded) This is the container port
+  type: LoadBalancer      # Type of service
