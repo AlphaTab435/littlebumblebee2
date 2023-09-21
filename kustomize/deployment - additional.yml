@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: bankist-app-deployment-mannual
+  labels:
+    app: bankist-app-deployment-mannual
+spec:
+  replicas: 1  # Number of desired replicas (pods)
+  selector:
+    matchLabels:
+      app: bankist-app-deployment-mannual
+  template:
+    metadata:
+      labels:
+        app: bankist-app-deployment-mannual
+    spec:
+      containers:
+      - name: bankist-app-conatiner-mannual
+        image: muhammadtabish/bankist-app:latest  # Replace with your Docker image and tag
+        ports:
+        - containerPort: 80  # Port your application listens on
+      # You can add more containers here if needed
