@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: bankist-app-deployment
-        image: muhammadtabish/bankist-app:latest  # Replace with your Docker image and tag
+        image: muhammadtabish/bankist-app:v1  # Replace with your Docker image and tag
         ports:
         - containerPort: 80  # Port your application listens on
       # You can add more containers here if needed
