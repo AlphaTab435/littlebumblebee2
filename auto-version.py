@@ -16,7 +16,7 @@ for str in splitDepoymentContent:
     if(imageName not in str):
         newDeployment+=str+"\n"
     else:
-        newDeployment+=imageName+":v1"+"  # Replace with your Docker image and tag\n"
+        newDeployment+=imageName+Version+"  # Replace with your Docker image and tag\n"
 # print(newDeployment)
 
 with open('kustomize/deployment.yml', 'w') as file:
