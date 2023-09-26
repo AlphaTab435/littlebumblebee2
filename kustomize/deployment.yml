@@ -5,7 +5,7 @@ metadata:
   labels:
     app: bankist-app-deployment
 spec:
-  replicas: 2  # Number of desired replicas (pods)
+  replicas: 1  # Number of desired replicas (pods)
   selector:
     matchLabels:
       app: bankist-app-deployment
